@@ -59,6 +59,14 @@ img {
     height: auto;
 }
 
+.hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
 .section {
     padding-left: 0;
     padding-right: 0;
@@ -478,7 +486,28 @@ textarea {
 }
 
 .form-input-checkbox {
+    position: absolute;
     margin-left: 12px;
+}
+
+.form-label-checkbox::before {
+    content: '';
+    display: inline-block;
+    margin-right: 8.48px;
+    width: 15.9px;
+    height: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: 2px solid #212121;
+}
+
+.form-input-checkbox:checked+.form-label-checkbox::before {
+    background-color: #2196f3;
+    background-image: url(./images/check.svg);
+    background-size: contain;
+    background-origin: border-box;
+    border-color: #2196f3;
 }
 
 .modal-button {
