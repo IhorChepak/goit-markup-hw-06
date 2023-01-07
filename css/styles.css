@@ -342,7 +342,6 @@ img {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    /* padding: 40px 40px; */
 }
 
 .modal-button-close {
@@ -353,22 +352,24 @@ img {
     height: 30px;
     border-radius: 50%;
     background-color: var(--color-main);
-    /* background-color: black; */
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    /* background-image: url('../images/icon-close.svg');
-    background-repeat: no-repeat;
-    background-size: 20px 20px;
-    background-position: center; */
+    transition-property: fill;
+    transition-duration: 2000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button-close:hover {
     fill: var(--color-text-action);
 }
 
-.modal-close-svg {
+
+/* .modal-close-svg {
     fill: var(--color-primary);
-}
+    transition-property: fill;
+    transition-duration: 5000ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
 .modal-title {
     color: var(--color-primary);
