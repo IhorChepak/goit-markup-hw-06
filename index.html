@@ -48,7 +48,7 @@
         <!-- Модальне вікно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-button-close" data-modal-close></button>
+                <button class="modal-button-close" data-modal-close><svg class="icon-close-svg" width="" height=""><use href="./images/icons.svg#icon-close"></use></svg></button>
 
 
                 <form class="form-main">
@@ -64,7 +64,7 @@
                     <p class="form-field ">
                         <label class="form-field-label " for="tel ">Телефон</label>
                         <input class="form-field-input " type="tel " name="tel " id="tel " placeholder=" ">
-                        <svg class="modal-icon" width="12px" height="12px" ;>
+                        <svg class="modal-icon" width="12" height="12" ;>
                             <use href=" ./images/icons.svg#icon-modal-email "></use>
                             </svg>
                     </p>
@@ -75,14 +75,15 @@
                             <use href=" ./images/icons.svg#icon-modal-phone "></use>
                             </svg>
                     </p>
-                    <p class="form-field ">
+                    <p class="form-field t">
                         <label class="form-field-label " id="comment ">Коментар</label>
                         <textarea class="form-field-textarea " name="comment " id="comment " rows=" " placeholder="Введіть текст"></textarea>
                     </p>
                     <p class="form-field-policy ">
-                        <input class="form-input-checkbox hidden" type="checkbox" name="policy" value=" " id="policy ">
-                        <label class="form-label-checkbox" for="policy">Погоджуюся з розсилкою та приймаю <a class="link-policy " href=" ">Умови договору</a></label>
-                    </p>
+                        <input class="form-input-checkbox hidden" type="checkbox" name="mail" id="checkbox">
+
+                        <label for="checkbox" class="form-label-checkbox"> Погоджуюся з розсилкою та приймаю<a class="form-checkbox-link" href=""> Умови договору
+  </a></label></p>
                     <button class="modal-button " type="submit ">
                         Відправити</button>
                 </form>
