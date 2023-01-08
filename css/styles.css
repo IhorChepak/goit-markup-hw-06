@@ -310,6 +310,7 @@ img {
     padding: 10px, 32px;
     margin-top: 30px;
     margin: 0 auto;
+    border: none;
 }
 
 
@@ -436,7 +437,7 @@ textarea[placeholder] {
 
 .modal-icon {
     position: absolute;
-    top: 33px;
+    top: 30px;
     left: 15px;
     display: inline-block;
     width: 18px;
@@ -551,6 +552,7 @@ textarea[placeholder] {
     letter-spacing: 0.06em;
     margin-left: 124px;
     margin-bottom: 40px;
+    border: none;
 }
 
 
@@ -999,6 +1001,7 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     align-items: center;
+    border: none;
 }
 
 .button-f-svg {
